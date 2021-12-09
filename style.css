@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #2d2013;
+  background: #0f0111;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
@@ -111,5 +111,42 @@ input[type="text"] {
 
 .meal:hover .meal-info {
   opacity: 1;
+}
+
+.single-meal {
+  margin: 30px auto;
+  width: 70%;
+  text-align: left;
+}
+
+.single-meal img {
+  width: 70%;
+  margin: 15px;
+  border: 4px white solid;
+  border-radius: 2px;
+}
+
+.single-meal .single-meal-info {
+  margin: 20px;
+  padding: 10px;
+  border: 2px orange dashed;
+  border-radius: 5px;
+}
+
+.single-meal .single-meal-info p {
+  margin: 0;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.single-meal .single-meal-info li {
+  border: 1px solid #ededed;
+  background: white;
+  display: inline;
+}
+
+.single-meal ul {
+  text-align: left;
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */
