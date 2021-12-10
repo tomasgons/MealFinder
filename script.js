@@ -4,13 +4,13 @@ const search = document.querySelector('#search'),
     mealsEl = document.querySelector('#meals'),
     resultHeading = document.querySelector('#result-heading'),
     single_mealEl = document.querySelector('#single-meal')
-// https://www.themealdb.com/api/json/v1/1/search.php?s=${term}
+// 
 const searchMeal = (e) => {
     e.preventDefault();
     single_mealEl.innerHTML = '';
     const term = search.value
     if (term.trim()) {
-        fetch(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
+        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);
